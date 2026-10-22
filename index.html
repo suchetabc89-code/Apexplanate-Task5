@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevSpace capstone project demonstrating responsive web design, performance optimization and interactive JavaScript features.">
+    <meta name="theme-color" content="#f7f8fc">
+
+    <title>DevSpace | Task 5 Final Project</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home">SUCHETA<span>MUKHOPADHYAY</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    type="button" aria-label="Toggle navigation"
+                    aria-controls="navLinks" aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#tools">Tools</a>
+                <a href="#contact">Contact</a>
+
+                <button id="themeToggle" class="theme-btn"
+                        type="button" aria-label="Switch to dark theme">
+                    ☾
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <p class="eyebrow"></p>
+
+         <h1>
+
+                    Hi, I'm
+
+                    <span>
+                        Sucheta Mukhopadhyay
+                    </span>
+
+                </h1>
+
+
+                <h2>
+                    Electronics Engineering Student & Web Developer
+                </h2>
+
+
+                <p>
+
+                    Detail-oriented Electronics and Communication Engineering undergraduate (CGPA: 8.12 ) with hands-on experience in analog and digital circuit, and web development. Skilled in C programming. Comfortable taking a hardware or software idea from concept through a working prototype.
+
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn primary-btn" href="#projects">
+                        Explore Projects →
+                    </a>
+                    <a class="btn secondary-btn" href="#about">
+                        Learn More
+                    </a>
+                    <a href="https://www.linkedin.com/in/sucheta-mukhopadhyay-33b553420" target="_blank" class="btn secondary-btn">
+
+                        Visit LinkedIn
+
+                    </a>
+                </div>
+
+                
+            </div>
+
+            <div class="hero-visual" aria-label="Code editor illustration">
+                <div class="code-card">
+                    <div class="code-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <small>app.js</small>
+                    </div>
+
+                    <pre><code><span class="code-purple">const</span> project = {
+  name: <span class="code-green">"SuchetaMukhopadhyay"</span>,
+  responsive: <span class="code-orange">true</span>,
+  optimized: <span class="code-orange">true</span>
+};
+
+<span class="code-purple">function</span> <span class="code-blue">buildWebsite</span>() {
+  <span class="code-purple">return</span> project;
+}
+
+console.log(buildWebsite());</code></pre>
+
+                    <div class="code-status">
+                        <span class="status-dot"></span>
+                        Ready to build
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-one">HTML5</div>
+                <div class="floating-badge badge-two">CSS3</div>
+                <div class="floating-badge badge-three">JS</div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section section-alt" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">ABOUT ME</p>
+                    <h2>Skills & Experience</h2>
+                    <p>
+                      Detail-oriented Electronics and Communication Engineering undergraduate (CGPA: 8.12) with hands-on experience in analog and digital circuit, and web development. Skilled in C programming. Comfortable taking a hardware or software idea from concept through a working prototype.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">💻</div>
+                        <h3>Programming Skills</h3>
+                        <p>
+                            C Programming and Web Development Technologies (HTML, CSS, JavaScript (Basics)). 
+
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">⚡</div>
+                        <h3>Hardware & Embedded Skills</h3>
+                        <p>
+                            Analog and Digital Circuit Design, Soldering.
+
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">📊</div>
+                        <h3>Currently Exploring</h3>
+                        <p>
+                            
+                        Python, DSA, MATLAB.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section container" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">MY WORK</p>
+                <h2>Project Gallery</h2>
+                <p>
+                    Electronics and
+                    Analog Projects
+                </p>
+            </div>
+
+            <div class="filter-bar" role="group"
+                 aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all"
+                        aria-pressed="true" type="button">All</button>
+
+                <button class="filter-btn" data-filter="web"
+                        aria-pressed="false" type="button">Digital Electronics </button>
+
+                <button class="filter-btn" data-filter="javascript"
+                        aria-pressed="false" type="button">
+                    Analog Electronics
+                </button>
+            </div>
+
+            <div class="project-grid" id="projectGrid">
+                <article class="project-card" data-category="web">
+                    <img class="project-image"
+                         src="counter_ic.jpeg"
+                         alt="Abstract browser window illustration"
+                         width="640" height="360"
+                         fetchpriority="high">
+
+                    <div class="project-info">
+                        <span class="project-tag">DIGITAL ELECTRONICS</span>
+                        <h3>LED Chaser</h3>
+                        <p>  LED Chaser driven by an NE555 Timer Clock.
+                        </p>
+
+                        <button class="text-btn project-details"
+                                data-title="Digital Clock"
+                                data-description="A digital electronics project designed
+                            to LED Chaser driven by an NE555 Timer Clock using digital logic."
+                                type="button">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="javascript">
+                    <img class="project-image"
+                         src="fwe.jpeg"
+                         alt="Task checklist illustration"
+                         width="640" height="360" 
+                         loading="lazy" decoding="async">
+
+                    <div class="project-info">
+                        <span class="project-tag">ANALOG ELECTRONICS</span>
+                        <h3>FWE</h3>
+                        <p>
+                            Full Wave Rectifier with Capacitive Filter to achieve 10% Duty Cycle.
+                        </p>
+
+                        <button class="text-btn project-details"
+                                data-title="Spider Robot"
+                                data-description=" Full Wave Rectifier with Capacitive Filter to achieve 10% Duty Cycle using analog components."
+                                type="button">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="design">
+                    <img class="project-image"
+                         src="line detector.jpeg"
+                         alt="Dashboard interface illustration"
+                         width="640" height="360"
+                         loading="lazy" decoding="async">
+
+                    <div class="project-info">
+                        <span class="project-tag">ANALOG ELECTRONICS</span>
+                        <h3>Line Detector</h3>
+                        <p>
+                            Line Detector without Microcontroller.
+                        </p>
+
+                        <button class="text-btn project-details"
+                                data-title="Amplifier Box"
+                                data-description="Line Detector using analog components, IR sensors, OPAMP and without Microcontroller."
+                                type="button">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <p id="projectCount" class="result-count" aria-live="polite">
+                Showing 3 projects
+            </p>
+        </section>
+
+        <!-- INTERACTIVE TOOLS -->
+        <section class="section section-alt" id="tools">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">INTERACTIVE TOOLS</p>
+                    <h2>Productivity Corner</h2>
+                    <p>
+                        Try the interactive features created with JavaScript.
+                    </p>
+                </div>
+
+                <div class="tools-grid">
+                    <!-- TASK MANAGER -->
+                    <section class="tool-card" aria-labelledby="taskHeading">
+                        <h3 id="taskHeading">✓ Smart Task Manager</h3>
+
+                        <p class="tool-description">
+                            Tasks are saved locally in this browser.
+                        </p>
+
+                        <form id="taskForm" class="task-form">
+                            <label class="sr-only" for="taskInput">
+                                New task
+                            </label>
+
+                            <input id="taskInput" type="text"
+                                   maxlength="120"
+                                   placeholder="Enter a new task..."
+                                   required>
+
+                            <button class="btn primary-btn" type="submit">
+                                Add
+                            </button>
+                        </form>
+
+                        <ul id="taskList" class="task-list"></ul>
+
+                        <p id="taskStatus" class="status-message"
+                           aria-live="polite"></p>
+                    </section>
+
+                    <!-- QUIZ -->
+                    <section class="tool-card quiz-card"
+                             aria-labelledby="quizHeading">
+                        <h3 id="quizHeading">⚡ Quick Web Quiz</h3>
+
+                        <p class="tool-description">
+                            Test your basic web development knowledge.
+                        </p>
+
+                        <div class="quiz-progress" id="quizProgress">
+                            Question 1 of 5
+                        </div>
+
+                        <h4 id="quizQuestion">Loading question...</h4>
+
+                        <div id="quizOptions" class="quiz-options"></div>
+
+                        <p id="quizFeedback" aria-live="polite"></p>
+
+                        <button class="btn primary-btn" id="nextQuestion"
+                                type="button" disabled>
+                            Next Question →
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section container" id="contact">
+            <div class="contact-panel">
+                <div>
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2>Have an idea?<br>Let's connect.</h2>
+                    <p>
+                        This sample contact form demonstrates client-side
+                        validation. It does not send data to a server.
+                    </p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text"
+                           maxlength="80" autocomplete="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email"
+                           maxlength="120" autocomplete="email"
+                           placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                              maxlength="1000" rows="4"
+                              placeholder="Write your message..."
+                              required></textarea>
+
+                    <button class="btn primary-btn" type="submit">
+                        Validate Message →
+                    </button>
+
+                    <p id="formStatus" class="status-message"
+                       aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="logo" href="#home">Sucheta<span>Mukhopadhyay.</span></a>
+
+            <p>
+                © <span id="currentYear"></span>
+                SuchetaMukhopadhyay. HTML · CSS · JavaScript
+            </p>
+        </div>
+    </footer>
+
+    <!-- PROJECT DETAILS DIALOG -->
+    <dialog id="projectDialog" class="project-dialog"
+            aria-labelledby="dialogTitle">
+        <button class="dialog-close" id="closeDialog" type="button"
+                aria-label="Close project details">×</button>
+
+        <p class="eyebrow">PROJECT DETAILS</p>
+        <h2 id="dialogTitle"></h2>
+        <p id="dialogDescription"></p>
+    </dialog>
+</body>
+</html>
